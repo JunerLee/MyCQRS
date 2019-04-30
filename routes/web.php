@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/article/index','ArticleController@index');
+
+Route::post('/article/add','ArticleController@add');
